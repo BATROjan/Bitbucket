@@ -35,7 +35,7 @@ namespace GameZone.Scripts
                 
                 for (int j = 0; j < _gameZoneConfig.HorizontalCount; j++)
                 {
-                    currentPoint.y = i;
+                    currentPoint.y = j;
                     _cellController.SpawnCell(_gameZoneView.transform, currentPoint);
                 }
             }
