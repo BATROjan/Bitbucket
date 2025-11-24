@@ -27,15 +27,16 @@ namespace GameZone.Scripts
         }
 
         public void SpawnZone(Vector3 position)
-        {
+        { 
             var currentPoint = _gameZoneConfig.StartPoint;
+            var offset = _gameZoneConfig.offset;
             for (int i = 0; i < _gameZoneConfig.HorizontalCount; i++)
             {
-                currentPoint.x = i;
+                currentPoint.x =  i*offset;
                 
                 for (int j = 0; j < _gameZoneConfig.HorizontalCount; j++)
                 {
-                    currentPoint.y = j;
+                    currentPoint.y =  j*offset;
                     _cellController.SpawnCell(_gameZoneView.transform, currentPoint);
                 }
             }

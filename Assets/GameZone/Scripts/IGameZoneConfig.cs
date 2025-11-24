@@ -6,7 +6,7 @@ namespace GameZone.Scripts
     {
         public int VerticalCount { get; }
         public int HorizontalCount { get; }
-        public int offset { get; }
+        public float offset { get; }
         public Vector3 StartPoint { get; }
     }
 }
