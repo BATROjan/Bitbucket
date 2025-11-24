@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a264214294a345e9ae64455cf3d26154, type: 3}
-  m_Name: GameZoneConfig
+  m_Script: {fileID: 11500000, guid: 65dfe00a52324555a2cf1de68e1af1b9, type: 3}
+  m_Name: ControllConfig
   m_EditorClassIdentifier: 
-  <VerticalCount>k__BackingField: 32
-  <HorizontalCount>k__BackingField: 32
-  <offset>k__BackingField: 1.7
-  <StartPoint>k__BackingField: {x: 0, y: 0, z: 0}
+  <LeftKey>k__BackingField: 97
+  <RightKey>k__BackingField: 100
+  <UpKey>k__BackingField: 119
+  <DownKey>k__BackingField: 115

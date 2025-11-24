@@ -49,7 +49,6 @@ namespace GameZone.Scripts
 
         public void Tick()
         {
-            Debug.Log("AAAAAAAAAa");
         }
     }
 }

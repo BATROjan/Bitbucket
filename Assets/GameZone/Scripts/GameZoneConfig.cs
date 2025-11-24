@@ -2,7 +2,7 @@
 
 namespace GameZone.Scripts
 {
-    [CreateAssetMenu (fileName = "GameZoneConfig", menuName = "configs")]
+    [CreateAssetMenu (fileName = "GameZoneConfig", menuName = "configs/GameZoneConfig")]
     
     public class GameZoneConfig : ScriptableObject, IGameZoneConfig
     {
