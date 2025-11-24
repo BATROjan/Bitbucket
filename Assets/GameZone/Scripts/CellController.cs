@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Pool;
 using VContainer;
 using VContainer.Unity;
@@ -11,6 +12,7 @@ namespace GameZone.Scripts
         private readonly IObjectResolver _resolver;
         private readonly ObjectPool<CellView> _pool;
 
+        private List<CellView> _listCellViews = new();
         public CellController(
             ICellView cellView,
             IObjectResolver resolver
@@ -24,9 +26,12 @@ namespace GameZone.Scripts
         private CellView Spawn() => _resolver.Instantiate(_cellView);
 
 
-        public void SpawnCell(Transform transform)
+        public void SpawnCell(Transform transform, Vector3 point)
         {
-            Spawn();
+            var cell = Spawn();
+            cell.transform.position = point;
+            cell.transform.SetParent(transform);
+            _listCellViews.Add(cell);
         }
 
         public void DespawnCell(CellView view)

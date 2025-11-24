@@ -9,22 +9,36 @@ namespace GameZone.Scripts
     public class GameZoneController : IGameZoneController, ITickable
     {
         private readonly CellController _cellController;
+        private readonly GameZoneConfig _gameZoneConfig;
         private readonly GameZoneView _gameZoneView;
         private readonly Transform _spawnPoint;
         
         public GameZoneController(
-           ICellController cellController,
+            IGameZoneConfig config,
+            ICellController cellController,
            IGameZoneView gameZoneView
           )
         {
             _gameZoneView = (GameZoneView)gameZoneView;
-            _gameZoneView.OnSpawned += SpawnZone;
+            _gameZoneConfig = (GameZoneConfig)config;
             _cellController = (CellController)cellController;
+
+            _gameZoneView.OnSpawned += SpawnZone;
         }
 
         public void SpawnZone(Vector3 position)
         {
-            _cellController.SpawnCell(_gameZoneView.transform);
+            var currentPoint = _gameZoneConfig.StartPoint;
+            for (int i = 0; i < _gameZoneConfig.HorizontalCount; i++)
+            {
+                currentPoint.x = i;
+                
+                for (int j = 0; j < _gameZoneConfig.HorizontalCount; j++)
+                {
+                    currentPoint.y = i;
+                    _cellController.SpawnCell(_gameZoneView.transform, currentPoint);
+                }
+            }
         }
 
         public void DespawnZone(GameZoneView view)

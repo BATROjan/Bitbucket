@@ -16,7 +16,7 @@ public class GameLifetimeScope : LifetimeScope
         builder.RegisterComponent(_cellView).As<ICellView>();
         
         //builder.Register<IGameZonePresenter, GameZonePresenter>(Lifetime.Singleton);
-        builder.RegisterInstance(gameZoneConfig).As<IGameZoneSetting>();
+        builder.RegisterInstance(gameZoneConfig).As<IGameZoneConfig>();
         
         builder.RegisterComponent(gameZoneView).As<IGameZoneView>();
 
