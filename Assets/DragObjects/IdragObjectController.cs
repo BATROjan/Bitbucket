@@ -6,5 +6,6 @@
         void Spawn();
         void ActivateDrag(int id);
         void Despawn();
+        bool IsActive();
     }
 }

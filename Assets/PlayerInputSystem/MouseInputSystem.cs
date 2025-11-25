@@ -36,7 +36,7 @@ namespace PlayerInputSystem
 
                 if (hit.transform) 
                 {
-                    if (_dragObjectController.CheckAllCells())
+                    if (_dragObjectController.CheckAllCells() && _dragObjectController.IsActive())
                     {
                         _houseController.Spawn(_dragObject.id, mousePosition);
                     }

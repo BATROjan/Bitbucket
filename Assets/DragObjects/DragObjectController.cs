@@ -55,6 +55,11 @@ namespace DragObjects
             OnReleased(_dragObject);
         }
 
+        public bool IsActive()
+        {
+            return _dragObject.gameObject.activeSelf;
+        }
+
         public bool CheckAllCells()
         {
             if (_cellController.ChekAllCells(_cellViews))
