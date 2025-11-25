@@ -1,4 +1,5 @@
 ﻿using DefaultNamespace;
+using DragObjects;
 using Houses;
 using UnityEngine;
 using VContainer.Unity;
@@ -7,17 +8,17 @@ namespace PlayerInputSystem
 {
     public class MouseInputSystem : IMouseInputSystem, ITickable
     {
-        private readonly IHouseView _houseView;
+        private readonly IDragObject _dragObject;
         private readonly IPlayerView _playerView;
         
         private float rayDistance = 100f;
         private LayerMask whatToHit;
 
         public MouseInputSystem(
-            IHouseView houseView,
+           // IDragObject dragObject,
             IPlayerView playerView)
         {
-            _houseView = houseView;
+           // _dragObject = dragObject;
             _playerView = playerView;
         }
 
@@ -29,7 +30,8 @@ namespace PlayerInputSystem
         public void Tick()
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            _houseView.Transform.position = mousePosition;
+            //_dragObject.Transform.position = mousePosition;
+            
             if (Input.GetMouseButtonDown(0))
             {
                 RaycastHit2D hit = Physics2D.Raycast(Camera.main.transform.position, mousePosition);                                                                                 

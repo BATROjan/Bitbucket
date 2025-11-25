@@ -108,7 +108,7 @@ TextureImporter:
         width: 355
         height: 265
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,6 +117,72 @@ TextureImporter:
       bones: []
       spriteID: 20a12f16de9320641b72c1e9c3e4cb9a
       internalID: -1049230770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: houses_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 107
+        width: 318
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eacf2a96b642848a5a28db9d1517de
+      internalID: -506454644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: houses_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 517
+        width: 305
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e7adecde11df549957b59c05b9de3a
+      internalID: -965721403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: houses_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 511
+        width: 342
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f42f5a752f3484a9b0f9cdff37e7cd
+      internalID: 1584967135
       vertices: []
       indices: 
       edges: []
@@ -136,6 +202,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       houses_0: -1049230770
+      houses_1: -506454644
+      houses_2: -965721403
+      houses_3: 1584967135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -28,6 +28,7 @@ namespace PlayerInputSystem
                 direction.y += 5 * Time.deltaTime * _inputSystem.VerticalDirection;
             }
             _playerView.Position += direction;
+            _inputSystem.GetCurrentIconID();
         }
     }
 }

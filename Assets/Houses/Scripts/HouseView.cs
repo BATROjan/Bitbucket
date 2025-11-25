@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using DragObjects;
+using UnityEngine;
 
 namespace Houses.Scripts
 {
-    public class HouseView: MonoBehaviour, IHouseView
+    public class HouseView: MonoBehaviour, IHouseView, IDragObject
     {
       [field: SerializeField] public SpriteRenderer SpriteRenderer { get; set; }
       [field: SerializeField] public Transform Transform { get; set; }

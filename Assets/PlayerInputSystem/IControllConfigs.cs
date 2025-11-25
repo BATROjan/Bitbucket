@@ -8,5 +8,9 @@ namespace PlayerInputSystem
         KeyCode RightKey { get; }
         KeyCode UpKey { get; }   
         KeyCode DownKey { get; }   
+        KeyCode FirstIconKey { get; }   
+        KeyCode SecondIconKey { get; }   
+        KeyCode ThirtIconKey { get; }   
+        KeyCode ForthIconKey { get; }   
     }
 }
