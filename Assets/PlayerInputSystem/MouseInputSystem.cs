@@ -1,6 +1,8 @@
 ﻿using DefaultNamespace;
 using DragObjects;
+using GameZone.Scripts;
 using Houses;
+using Houses.Scripts;
 using UnityEngine;
 using VContainer.Unity;
 
@@ -8,18 +10,17 @@ namespace PlayerInputSystem
 {
     public class MouseInputSystem : IMouseInputSystem, ITickable
     {
+        private readonly IdragObjectController _dragObjectController;
+        private readonly IHouseController _houseController;
         private readonly IDragObject _dragObject;
-        private readonly IPlayerView _playerView;
-        
-        private float rayDistance = 100f;
-        private LayerMask whatToHit;
-
         public MouseInputSystem(
-            IDragObject dragObject,
-            IPlayerView playerView)
+            IdragObjectController dragObjectController,
+            IHouseController houseController,
+            IDragObject dragObject)
         {
+            _dragObjectController = dragObjectController;
+            _houseController = houseController;
             _dragObject = dragObject;
-            _playerView = playerView;
         }
 
         public void ChechCells()
@@ -38,7 +39,10 @@ namespace PlayerInputSystem
 
                 if (hit.transform) 
                 {
-                    Debug.Log($"Луч попал в объект: {hit.collider.gameObject.name} в точке {hit.point}");
+                    if (_dragObjectController.CheckAllCells())
+                    {
+                        _houseController.Spawn(mousePosition);
+                    }
                 }
                 else
                 {
