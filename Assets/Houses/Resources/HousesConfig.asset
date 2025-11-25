@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: HousesConfig
   m_EditorClassIdentifier: 
   houseModels:
-  - <Sprite>k__BackingField: {fileID: -1049230770, guid: df82975f54f1dee4f8ac76f06e0e303a, type: 3}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 582c22146de82c544b7b1d855cd6f4da, type: 3}
     <LvL>k__BackingField: 1
     <MaxLvL>k__BackingField: 3
     <UpgrateCost>k__BackingField: 10
     <Income>k__BackingField: 5
-  - <Sprite>k__BackingField: {fileID: -506454644, guid: df82975f54f1dee4f8ac76f06e0e303a, type: 3}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 245ac53630cfd8f41991401428e8a412, type: 3}
     <LvL>k__BackingField: 1
     <MaxLvL>k__BackingField: 3
     <UpgrateCost>k__BackingField: 20
     <Income>k__BackingField: 10
-  - <Sprite>k__BackingField: {fileID: 1584967135, guid: df82975f54f1dee4f8ac76f06e0e303a, type: 3}
+  - <Sprite>k__BackingField: {fileID: 21300000, guid: 78de8328acd9c2c49a9c1ac2f6dde45e, type: 3}
     <LvL>k__BackingField: 1
     <MaxLvL>k__BackingField: 3
     <UpgrateCost>k__BackingField: 30

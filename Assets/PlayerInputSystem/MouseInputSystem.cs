@@ -1,7 +1,4 @@
-﻿using DefaultNamespace;
-using DragObjects;
-using GameZone.Scripts;
-using Houses;
+﻿using DragObjects;
 using Houses.Scripts;
 using UnityEngine;
 using VContainer.Unity;
@@ -41,12 +38,8 @@ namespace PlayerInputSystem
                 {
                     if (_dragObjectController.CheckAllCells())
                     {
-                        _houseController.Spawn(mousePosition);
+                        _houseController.Spawn(_dragObject.id, mousePosition);
                     }
-                }
-                else
-                {
-                    Debug.Log("Луч ни во что не попал.");
                 }
             }
         }

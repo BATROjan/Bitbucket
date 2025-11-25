@@ -40,9 +40,11 @@ namespace Houses.Scripts
             return _houseConfig.GetModelById(id);
         }
 
-        public void Spawn(Vector2 position)
+        public void Spawn(int id, Vector2 position)
         {
             var houseView = SpawnObject();
+            var model = _houseConfig.GetModelById(id);
+            houseView.SpriteRenderer.sprite = model.Sprite;
             houseView.Transform.position = position;
         }
 
