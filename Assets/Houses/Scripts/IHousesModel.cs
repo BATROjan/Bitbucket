@@ -2,7 +2,7 @@
 
 namespace Houses.Scripts
 {
-    public interface IHousesConfig
+    public interface IHousesModel
     {
         Sprite Sprite { get; }
         int LvL { get; }

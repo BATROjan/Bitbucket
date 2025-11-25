@@ -18,3 +18,13 @@ MonoBehaviour:
     <MaxLvL>k__BackingField: 3
     <UpgrateCost>k__BackingField: 10
     <Income>k__BackingField: 5
+  - <Sprite>k__BackingField: {fileID: -506454644, guid: df82975f54f1dee4f8ac76f06e0e303a, type: 3}
+    <LvL>k__BackingField: 1
+    <MaxLvL>k__BackingField: 3
+    <UpgrateCost>k__BackingField: 20
+    <Income>k__BackingField: 10
+  - <Sprite>k__BackingField: {fileID: 1584967135, guid: df82975f54f1dee4f8ac76f06e0e303a, type: 3}
+    <LvL>k__BackingField: 1
+    <MaxLvL>k__BackingField: 3
+    <UpgrateCost>k__BackingField: 30
+    <Income>k__BackingField: 12

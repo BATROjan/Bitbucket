@@ -15,10 +15,10 @@ namespace PlayerInputSystem
         private LayerMask whatToHit;
 
         public MouseInputSystem(
-           // IDragObject dragObject,
+            IDragObject dragObject,
             IPlayerView playerView)
         {
-           // _dragObject = dragObject;
+            _dragObject = dragObject;
             _playerView = playerView;
         }
 
@@ -30,7 +30,7 @@ namespace PlayerInputSystem
         public void Tick()
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //_dragObject.Transform.position = mousePosition;
+            _dragObject.Transform.position = mousePosition;
             
             if (Input.GetMouseButtonDown(0))
             {
